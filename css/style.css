@@ -1,0 +1,122 @@
+/* dégradé de couleurs en fond pour body  */
+
+body {
+    background: repeating-linear-gradient(90deg, #E2C9D7, #E2C9D7 20px, #E9D2DF 0, #E9D2DF 40px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    border-left: 10px solid #b934a2;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 75%;
+}
+
+h1 {
+    color: white;
+    background-color: #b934a2;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: #b934a2;
+}
+
+
+/* fin base */
+
+
+/* header */
+
+header address {
+    color: #b934a2;
+    letter-spacing: 3px;
+}
+
+
+/* today */
+
+#today button {
+    background-color: #b934a2;
+    border: none;
+}
+
+
+/* sample */
+
+span {
+    color: #b934a2;
+}
+
+
+/* openWhere */
+
+table {
+    width: 100%;
+}
+
+#openWhere td {
+    padding: 5px 30px;
+}
+
+#openWhere table tr:nth-child(odd) {
+    background-color: #b934a2;
+}
+
+.col-lg-6 address {
+    color: #b934a2;
+}
+
+
+/* footer */
+
+footer span {
+    color: #b934a2;
+}
+
+
+/* responsive */
+
+
+/* mobile */
+
+@media screen and (min-width: 350px) and (max-width: 575px) {
+    .container {
+        width: 100%;
+        border: none;
+    }
+    /* header */
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav {
+        left: 70px;
+        flex-direction: row;
+    }
+    header img {
+        text-align: center;
+        margin: 0 auto;
+    }
+    header h1 {
+        display: none;
+    }
+    /* text */
+    #text {
+        background-color: #b934a2;
+        color: white;
+    }
+    /* today */
+    #today img {
+        text-align: center;
+    }
+    /* openWhere disparu */
+    .disparu {
+        display: none;
+    }
+    #openWhere table tr:nth-child(odd) {
+        background-color: rgba(255, 255, 255, 0.144);
+    }
+    #openWhere table tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.144);
+    }
+}
